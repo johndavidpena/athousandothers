@@ -1,38 +1,32 @@
 import React, { useState } from 'react';
 
-// passing in an array with two values: an empty object, and an empty function, as the initial value
 const MusicPlayerContext = React.createContext([{}, () => { }]);
 
-const MusicPlayerProvider = props => {
+const MusicPlayerProvider = (props) => {
   const [state, setState] = useState({
+    audioPlayer: new Audio(),
     tracks: [
       {
-        name: 'Fawn',
+        name: 'Tank Operator',
+        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1558617947/Original%20Music/tankOperator.mp3'
       },
       {
-        name: 'Pick Up',
+        name: 'Arms',
+        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1558617910/Original%20Music/arms.mp3'
       },
       {
-        name: 'Stripper',
+        name: 'Righteous',
+        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1557505652/Original%20Music/Righteous.mp3'
       },
     ],
+    currentTrackIndex: null,
+    isPlaying: false,
   });
-
   return (
-    /* put the state object and the setter function into an array, and pass that into our Context Provider’s value. This is why we passed in an array with an empty object and an empty function when creating the Context above */
-    <MusicPlayerContext.Provider value={[state, setState]} >
+    <MusicPlayerContext.Provider value={[state, setState]}>
       {props.children}
     </MusicPlayerContext.Provider>
   );
-}
+};
 
 export { MusicPlayerContext, MusicPlayerProvider };
-
-/* All we need to do to access the Context’s state is import it into a component and use the useContext Hook in React!
-
-import { MusicPlayerContext } from "./MusicPlayerContext";
-
-...
-
-const [state, setState] = useContext(MusicPlayerContext);
-*/

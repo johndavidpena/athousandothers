@@ -21,7 +21,7 @@
   --box-shadow-less: 0 2px 3px 0 hsla(0, 0%, 0%, 0.2);
   --inset-box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
 
-  --default-sans: 'Avenir', 'Roboto', sans-serif;
+  --default-sans: 'Lato', sans-serif;
   --default-serif: 'Playfair Display', 'Roboto Slab', serif;
 
   --font-size: 1.6rem;
@@ -407,6 +407,7 @@ html {
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
 }
+
 /* !ONE OPTION */
 /* On screens 600px or less */
 @media only screen and (max-width: 600px) {

@@ -2,14 +2,19 @@
 import React from 'react';
 import './App.css';
 
-import Tracklist from './Tracklist';
+import TrackList from './components/TrackList';
+import PlayerControls from './components/PlayerControls';
 import { MusicPlayerProvider } from './MusicPlayerContext';
 
-const App = () => {
+function App() {
   return (
     <MusicPlayerProvider>
-      <div className="container">
-        <Tracklist />
+      <div className="App">
+        <h1>A Thousand Others</h1>
+        <div className='absCentered'>
+          <PlayerControls />
+          <TrackList />
+        </div>
       </div>
     </MusicPlayerProvider>
   );
