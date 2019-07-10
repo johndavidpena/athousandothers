@@ -2,21 +2,25 @@ import React, { useState } from 'react';
 
 const MusicPlayerContext = React.createContext([{}, () => { }]);
 
-const MusicPlayerProvider = (props) => {
+const MusicPlayerProvider = props => {
   const [state, setState] = useState({
     audioPlayer: new Audio(),
     tracks: [
       {
-        name: 'Tank Operator',
-        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1558617947/Original%20Music/tankOperator.mp3'
+        name: 'Track Name 1',
+        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800375/A%20Thousand%20Others%20Audio/Track_Name_1.mp3'
       },
       {
-        name: 'Arms',
-        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1558617910/Original%20Music/arms.mp3'
+        name: 'Track Name 2',
+        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800381/A%20Thousand%20Others%20Audio/Track_Name_2.mp3'
       },
       {
-        name: 'Righteous',
-        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1557505652/Original%20Music/Righteous.mp3'
+        name: 'Track Name live',
+        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800308/A%20Thousand%20Others%20Audio/Track_Name_live.mp3'
+      },
+      {
+        name: 'Sketch live',
+        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800350/A%20Thousand%20Others%20Audio/Sketch_1.mp3'
       },
     ],
     currentTrackIndex: null,
