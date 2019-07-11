@@ -31,6 +31,10 @@ const MusicPlayerProvider = props => {
         src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800350/A%20Thousand%20Others%20Audio/Sketch_1.mp3'
       },
       {
+        name: 'Mountain Song (live)',
+        src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562871356/A%20Thousand%20Others%20Audio/Mountain_Song.mp3'
+      },
+      {
         name: 'Open Season (live)',
         src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800309/A%20Thousand%20Others%20Audio/Open_Season_live.mp3'
       },
@@ -50,22 +54,10 @@ const MusicPlayerProvider = props => {
         name: "Zak's tapes #1",
         src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800347/A%20Thousand%20Others%20Audio/Zak_Jazz.mp3'
       },
-      // {
-      //   name: 'Breathless - Travis',
-      //   src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800370/A%20Thousand%20Others%20Audio/Breathless.mp3'
-      // },
       {
         name: "Zak's tapes #2",
         src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800384/A%20Thousand%20Others%20Audio/Long_Zak_tapes.mp3'
       },
-      // {
-      //   name: "Zak's Buddy",
-      //   src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800375/A%20Thousand%20Others%20Audio/Track_Name_1.mp3'
-      // },
-      // {
-      //   name: 'The Forgotten',
-      //   src: 'https://res.cloudinary.com/mimas-music/video/upload/v1562800381/A%20Thousand%20Others%20Audio/Track_Name_2.mp3'
-      // },
     ],
     currentTrackIndex: null,
     isPlaying: false,
