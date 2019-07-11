@@ -11,10 +11,10 @@ function App() {
     <MusicPlayerProvider>
       <div className="App">
         <h1>A Thousand Others</h1>
-        <div className='absCentered'>
+        <React.Fragment>
           <PlayerControls />
           <TrackList />
-        </div>
+        </React.Fragment>
       </div>
     </MusicPlayerProvider>
   );

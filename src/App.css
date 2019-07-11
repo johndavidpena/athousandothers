@@ -2,7 +2,9 @@ body {
   background: var(--text-dark);
 }
 
-.App {}
+.App {
+  margin-bottom: 6rem;
+}
 
 .App h1 {
   font-family: 'Amatic SC', cursive;
@@ -22,11 +24,19 @@ body {
   background: var(--teal-300);
   color: var(--magenta-900);
   padding: 0.5rem;
-  margin: var(--size-1);
   border-radius: var(--border-radius-1);
 
-  display: flex !important;
+  display: flex;
   align-items: center;
+  width: 50%;
+  margin: var(--size-1) auto;
+}
+
+/* If the width is 992px or MORE */
+@media only screen and (min-width: 62em) {
+  .track {
+  width: 30%;
+  }
 }
 
 .button {
@@ -45,13 +55,21 @@ body {
 .controls {
   background: var(--cyan-800);
   padding: 0.5rem;
-  margin: var(--size-1);
   border-radius: var(--border-radius-1);
 
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 50%;
+  margin: var(--size-1) auto;
+}
+
+/* If the width is 992px or MORE */
+@media only screen and (min-width: 62em) {
+  .controls {
+  width: 30%;
+  }
 }
 
 .controlsBtn {

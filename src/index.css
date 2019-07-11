@@ -408,22 +408,6 @@ html {
   overflow-x: hidden;
 }
 
-/* !ONE OPTION */
-/* On screens 600px or less */
-@media only screen and (max-width: 600px) {
-  html {
-    /* 1rem = 10px */
-    font-size: 62.5%;
-  }
-}
-/* On screens 601px or more */
-@media only screen and (min-width: 601px) {
-  html {
-    /* 1rem = 10px */
-    font-size: 70%;
-  }
-}
-/* !ANOTHER OPTION */
 @media only screen and (max-width: 576px) {
   html {
   font-size: 16px;
